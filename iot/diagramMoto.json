@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "author": "Luisa Danielle",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-devkit-c-v4",
+      "id": "esp",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-pir-motion-sensor",
+      "id": "pir1",
+      "top": 4,
+      "left": 146.22,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    [
+      "esp:TX",
+      "$serialMonitor:RX",
+      "",
+      []
+    ],
+    [
+      "esp:RX",
+      "$serialMonitor:TX",
+      "",
+      []
+    ],
+    [
+      "pir1:GND",
+      "esp:GND.3",
+      "black",
+      [
+        "v28.8",
+        "h-86.66",
+        "v-38.4"
+      ]
+    ],
+    [
+      "pir1:OUT",
+      "esp:21",
+      "green",
+      [
+        "v19.2",
+        "h-67.34",
+        "v-9.6"
+      ]
+    ],
+    [
+      "pir1:VCC",
+      "esp:3V3",
+      "red",
+      [
+        "v9.6",
+        "h-48",
+        "v-38.4",
+        "h-19.2",
+        "v-57.6",
+        "h-19.2",
+        "v-19.2",
+        "h-86.4",
+        "v19.2",
+        "h-19.2",
+        "v19.2"
+      ]
+    ]
+  ],
+  "dependencies": {}
+}
