@@ -1,5 +1,5 @@
-import { client } from "../mqtt/broker";
-import { api } from "./api";
+import { client } from "../mqtt/broker.js";
+import { api } from "./api.js";
 import dotenv from "dotenv";
 
 dotenv.config();
@@ -25,7 +25,7 @@ export function listenMotos() {
 
       const response = await api.put(`/${data.id}`, data);
       console.log("✅ Moto atualizada no backend:", response.status);
-    } catch (err: any) {
+    } catch (err) {
       console.error("❌ Erro ao processar mensagem de moto:", err.message);
     }
   });

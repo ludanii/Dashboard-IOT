@@ -37,7 +37,7 @@ Automatizar o monitoramento das vagas de estacionamento e status das motos utili
 | RFID ⚠️   | Recebimento e envio de tags ( atualmente somente simulação - Wokwi não oferece o componente)                                  |
 | MQTT                 | Protocolo leve de comunicação entre dispositivos IoT                   |
 | Maqiatto (Broker)   | Gerencia a troca de mensagens MQTT                                     |
-| [app.js](./app.ts) (Node)     | Arquivo servir de subscrição do broker e chamar a API JAVA                      |
+| [app.js](./app.js) (Node)     | Arquivo servir de subscrição do broker e chamar a API JAVA                      |
 | BACKEND JPA | Tratamento de dados e atualização de banco de dados
 | FRONTEND MOBILE | Visualização de dados integrado com a API de JAVA |
 

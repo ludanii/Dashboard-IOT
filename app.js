@@ -1,7 +1,7 @@
 import dotenv from "dotenv";
-import { client } from "./mqtt/broker";
-import { listenVagas } from "./api/vagas";
-import { listenMotos } from "./api/motos";
+import { client } from "./mqtt/broker.js";
+import { listenVagas } from "./api/vagas.js";
+import { listenMotos } from "./api/motos.js";
 
 dotenv.config();
 
